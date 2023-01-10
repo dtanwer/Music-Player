@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/497af858a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="fa-solid fa-angle-down"></i>
+            <span>Now Playing</span>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name">Saurav & System - Song</p>
+            <p class="artist">Saurav & System</p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+            </div>
+            <div class="timer">
+                <span class="current">0:20</span>
+                <span class="duration">3:40</span>
+            </div>
+        </div>
+        <audio id="main-audio" src=""></audio>
+        <div class="controls">
+            <i id="repeat-plist" title="repeat" class="fa-solid fa-repeat"></i>
+            <i id="prev" class="fa-solid fa-backward"></i>
+            <div class="play-pause">
+                <i class="fa-solid fa-play"></i>
+            </div>
+           
+            <i id="next" class="fa-solid fa-forward"></i>
+            <i id="more-music" class="fa-solid fa-list"></i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i id="music-list" class="fa-solid fa-list more-music"></i>
+                    <span>Music list</span>
+                </div>
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>  
+    <script src="js/musicList.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
